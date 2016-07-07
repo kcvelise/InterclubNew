@@ -43,3 +43,11 @@ html,body{
 .bold{
     font-weight:700;
 }
+.albumYear{
+    display: none;
+}
+.tabs a{
+    cursor: pointer;
+}
+.mySlides {
+    display:none;}

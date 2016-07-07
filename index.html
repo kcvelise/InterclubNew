@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/res-timeline.css">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/animatescroll.js"></script>
+    <script type = "text/javascript" src="js/res-timeline.js"></script>
 </head>
 <body>
-<script src="https://use.fontawesome.com/2c969839cf.js"></script>
+
 <nav class="w3-sidenav  w3-collapse w3-card-2 w3-animate-left sideNav" style="width:250px;" id="mySidenav">
   <a href="javascript:void(0)" onclick="w3_close()" style="color:white"
   class="w3-closenav  w3-large w3-hide-large w3-right-align">&#9776;</a>
@@ -25,15 +28,20 @@
   <a onclick="$('#home').animatescroll()"><li class="w3-padding-8 w3-white">
     <i class="fa fa-home w3-xlarge" aria-hidden="true"></i><span class="navFont" >Home</span>
   </li></a>
-      <a onclick="$('#outTeam').animatescroll()">
-          <li class="w3-padding-8 w3-white">
-              <i class="fa fa-users w3-xlarge" aria-hidden="true"></i><span class="navFont">Our Team</span>
-          </li>
-      </a>
+  
       <a onclick="$('#Gallery').animatescroll()">
           <li class="w3-padding-8 w3-white">
               <i class="fa fa-picture-o w3-xlarge" aria-hidden="true"></i><span class="navFont">Gallery</span>
-
+          </li>
+      </a>
+      <a onclick="$('#Events').animatescroll()">
+           <li class="w3-padding-8 w3-white">
+              <i class="fa fa-calendar w3-xlarge" aria-hidden="true"></i><span class="navFont">Events</span>
+          </li>
+      </a>
+      <a onclick="$('#outTeam').animatescroll()">
+          <li class="w3-padding-8 w3-white">
+              <i class="fa fa-users w3-xlarge" aria-hidden="true"></i><span class="navFont">Our Team</span>
           </li>
       </a>
 </ul>
@@ -55,58 +63,121 @@
 
 <div class="w3-container content ">
     <div id="home" class="content">
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus lorem elit, quis vehicula justo efficitur in. Nunc ultricies lobortis libero, sed fringilla metus elementum sed. Sed erat dolor, tempor et nunc id, euismod elementum ante. Nunc faucibus varius mauris eget consequat. Fusce pulvinar consectetur tellus ut rutrum. Aenean imperdiet, massa nec dignissim rutrum, velit leo pulvinar enim, eget laoreet purus quam eu dui. Duis tortor arcu, condimentum eu laoreet id, blandit quis quam. Duis facilisis interdum eleifend. Cras facilisis dolor eu eros pulvinar blandit. Nunc at placerat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget nisl sapien. Aliquam justo libero, auctor in diam vel, elementum dictum purus. Nunc pharetra a nisi vitae consequat. In nec dignissim sapien, ut maximus diam.</p>
+ <h2>Home</h2>
+    </div>
+    <div id="Gallery" class="content">
+        <h2 class="customFont">Gallery</h2>
+<div class="w3-row tabs">
+  <a  onclick="openCity(event, '2015');">
+    <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding">2015</div>
+  </a>
+  <a  onclick="openCity(event, '2016');">
+    <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding">2016</div>
+  </a>
+</div>
+
+<div id="2015" class="w3-container  albumYear">
+  <h2>2015</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+					aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+					ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu </p>
+    
+</div>
+
+<div id="2016" class="w3-container albumYear">
+  <h2>2016</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+					aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+					ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu </p>
+</div>
+
+
+    </div>
+    <div id="Events" class="content">
+      <div class = "jflatTimeline">
+
+		<div class = "timeline-wrap">
+		
+			<div class = "event" data-date = "02/06/2016">
+
+				<div class = "layout1">
+                    <div class="left">
+					<img src = "images/img_avatar2.png" alt = "image alt"/>
+                    </div>
+                    <div class="right">
+					<h3>Sample Event</h3>
+					<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+					aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+					ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu 
+					</p>
+                    </div>
+				</div>
+				<span class = "date"><i class = "fa fa-calendar"></i>02.03.2016</span>
+			</div>
+	       
+            <div class="event" data-date = "07/07/2016">
+            <div class="layout1">
+                <div class="left">
+                <img src="images/img_avatar3.png" alt="image"/>
+                </div>
+                <div class="right">
+                <h3>Sample Event</h3>
+                    <p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+					aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+					ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu 
+					</p>
+                </div>
+                </div>
+            </div>
+			</div>
+			
+		</div>
     </div>
     <div id="outTeam" class="content">
         <h2 class="w3-center customFont bold">OurTeam</h2>
-        <div class="w3-row ">
-            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+        <div class="w3-row-padding">
+            <div class="w3-border w3-round w3-white w3-col l3">
                 <div class="w3-container">
                     <h4 class="w3-center">Rajesh</h4>
                     <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
                     <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
                     <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
                 </div>
             </div>
-            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+            <div class="w3-round w3-white w3-col l1 m1 s1">
+            <p>&nbsp;</p>
+            </div>
+            <div class="w3-border w3-round w3-white w3-col l3 ">
                 <div class="w3-container">
                     <h4 class="w3-center">Rajesh</h4>
                     <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
                     <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
                     <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
                 </div>
             </div>
-            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+            <div class="w3-col l1 m1 s1">
+            <p>&nbsp;</p>
+            </div>
+            <div class="w3-border w3-round w3-white w3-col l3 ">
                 <div class="w3-container">
                     <h4 class="w3-center">Rajesh</h4>
                     <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                     <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
                     <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
                     <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
+                    
                 </div>
             </div>
-            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
-                <div class="w3-container">
-                    <h4 class="w3-center">Rajesh</h4>
-                    <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                    <hr>
-                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
-                    <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
-                    <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
-                </div>
+            <div class="w3-col l1 m1 s1">
+            <p>&nbsp;</p>
             </div>
         </div>
     </div>
-    <div id="Gallery" class="content">
-        <h2>Gallery</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus lorem elit, quis vehicula justo efficitur in. Nunc ultricies lobortis libero, sed fringilla metus elementum sed. Sed erat dolor, tempor et nunc id, euismod elementum ante. Nunc faucibus varius mauris eget consequat. Fusce pulvinar consectetur tellus ut rutrum. Aenean imperdiet, massa nec dignissim rutrum, velit leo pulvinar enim, eget laoreet purus quam eu dui. Duis tortor arcu, condimentum eu laoreet id, blandit quis quam. Duis facilisis interdum eleifend. Cras facilisis dolor eu eros pulvinar blandit. Nunc at placerat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget nisl sapien. Aliquam justo libero, auctor in diam vel, elementum dictum purus. Nunc pharetra a nisi vitae consequat. In nec dignissim sapien, ut maximus diam.</p>
-    </div>
+    
 </div>
 
 
@@ -122,6 +193,41 @@ function w3_close() {
 }
 </script>
      
+<script>
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("albumYear");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-blue";
+}
+    var myBtn = document.getElementsByClassName("tablink")[0];
+    myBtn.click();
+</script>    
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+    
 </body>
 </html>
 
