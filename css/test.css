@@ -1,0 +1,45 @@
+html,body{
+    height:100% !important;
+
+}
+
+.sideNav{
+    background-color: #222629;
+    position: relative;
+}
+.sideNav a{
+    padding: 0px !important;
+    border-bottom: 1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    cursor: pointer;
+}
+.navFont{
+    font-family: 'Josefin Slab', serif;
+    font-size: 24px;
+    padding-left: 30px;
+    text-align: right;
+}
+.logo{
+
+    color: white;
+}
+.customFont{
+    font-family: 'Josefin Slab', serif;
+}
+
+.navFooter{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    width:100%;
+}
+
+.content{
+    height:100%;
+}
+
+.bold{
+    font-weight:700;
+}

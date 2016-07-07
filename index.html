@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interclub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/animatescroll.js"></script>
+</head>
+<body>
+<script src="https://use.fontawesome.com/2c969839cf.js"></script>
+<nav class="w3-sidenav  w3-collapse w3-card-2 w3-animate-left sideNav" style="width:250px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" style="color:white"
+  class="w3-closenav  w3-large w3-hide-large w3-right-align">&#9776;</a>
+    
+    <div class="w3-row-padding w3-margin w3-center logo ">
+    <img src="images/logo.png" alt="logo" class="w3-circle w3-card-4 " style="width:70%">
+        <h2 class="w3-margin customFont" >Interclub</h2>
+    </div>
+    
+  <ul class="w3-ul w3-card-4">
+  <a onclick="$('#home').animatescroll()"><li class="w3-padding-8 w3-white">
+    <i class="fa fa-home w3-xlarge" aria-hidden="true"></i><span class="navFont" >Home</span>
+  </li></a>
+      <a onclick="$('#outTeam').animatescroll()">
+          <li class="w3-padding-8 w3-white">
+              <i class="fa fa-users w3-xlarge" aria-hidden="true"></i><span class="navFont">Our Team</span>
+          </li>
+      </a>
+      <a onclick="$('#Gallery').animatescroll()">
+          <li class="w3-padding-8 w3-white">
+              <i class="fa fa-picture-o w3-xlarge" aria-hidden="true"></i><span class="navFont">Gallery</span>
+
+          </li>
+      </a>
+</ul>
+    
+    <div class="w3-row-padding navFooter">
+  <div class="w3-row">
+  <div class="w3-col s4  w3-center"><i class="fa fa-facebook w3-xlarge" aria-hidden="true"></i></div>
+  <div class="w3-col s4  w3-center"><i class="fa fa-youtube w3-xlarge" aria-hidden="true"></i></div>
+  <div class="w3-col s4  w3-center"><i class="fa fa-envelope-o w3-xlarge" aria-hidden="true"></i></div>
+</div>
+</div>
+</nav>
+
+<div class="w3-main content" style="margin-left:250px">
+<header class="w3-container w3-teal">
+  <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
+  <h2>Home</h2>
+</header>
+
+<div class="w3-container content ">
+    <div id="home" class="content">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus lorem elit, quis vehicula justo efficitur in. Nunc ultricies lobortis libero, sed fringilla metus elementum sed. Sed erat dolor, tempor et nunc id, euismod elementum ante. Nunc faucibus varius mauris eget consequat. Fusce pulvinar consectetur tellus ut rutrum. Aenean imperdiet, massa nec dignissim rutrum, velit leo pulvinar enim, eget laoreet purus quam eu dui. Duis tortor arcu, condimentum eu laoreet id, blandit quis quam. Duis facilisis interdum eleifend. Cras facilisis dolor eu eros pulvinar blandit. Nunc at placerat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget nisl sapien. Aliquam justo libero, auctor in diam vel, elementum dictum purus. Nunc pharetra a nisi vitae consequat. In nec dignissim sapien, ut maximus diam.</p>
+    </div>
+    <div id="outTeam" class="content">
+        <h2 class="w3-center customFont bold">OurTeam</h2>
+        <div class="w3-row ">
+            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+                <div class="w3-container">
+                    <h4 class="w3-center">Rajesh</h4>
+                    <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
+                    <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
+                    <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
+                </div>
+            </div>
+            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+                <div class="w3-container">
+                    <h4 class="w3-center">Rajesh</h4>
+                    <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
+                    <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
+                    <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
+                </div>
+            </div>
+            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+                <div class="w3-container">
+                    <h4 class="w3-center">Rajesh</h4>
+                    <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
+                    <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
+                    <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
+                </div>
+            </div>
+            <div class="w3-card-2 w3-round w3-white w3-col l3 w3-margin">
+                <div class="w3-container">
+                    <h4 class="w3-center">Rajesh</h4>
+                    <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> President</p>
+                    <p><i class="fa fa-mobile fa-fw w3-margin-right w3-text-theme"></i> 9866884449</p>
+                    <p><i class="fa fa-envelope-o fa-fw w3-margin-right w3-text-theme"></i> abc@xyz.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Gallery" class="content">
+        <h2>Gallery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus lorem elit, quis vehicula justo efficitur in. Nunc ultricies lobortis libero, sed fringilla metus elementum sed. Sed erat dolor, tempor et nunc id, euismod elementum ante. Nunc faucibus varius mauris eget consequat. Fusce pulvinar consectetur tellus ut rutrum. Aenean imperdiet, massa nec dignissim rutrum, velit leo pulvinar enim, eget laoreet purus quam eu dui. Duis tortor arcu, condimentum eu laoreet id, blandit quis quam. Duis facilisis interdum eleifend. Cras facilisis dolor eu eros pulvinar blandit. Nunc at placerat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget nisl sapien. Aliquam justo libero, auctor in diam vel, elementum dictum purus. Nunc pharetra a nisi vitae consequat. In nec dignissim sapien, ut maximus diam.</p>
+    </div>
+</div>
+
+
+     
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
+
