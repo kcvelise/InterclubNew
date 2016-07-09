@@ -4,7 +4,7 @@ html,body{
 }
 
 .sideNav{
-    background-color: #222629;
+    background-color: #294356;
     position: relative;
 }
 .sideNav a{
@@ -51,6 +51,7 @@ html,body{
     cursor: pointer;
 }
 .mySlides {
+
     display:none;}
 
 .centerDiv{
@@ -71,3 +72,98 @@ html,body{
 .overflow{
     overflow:auto;
 }
+.navBar{
+    position: fixed;
+    width: 100%;
+}
+.prevBtn
+{
+    top:0;
+    bottom: 0;
+    position: absolute;
+    left:0px;
+    max-height: 34px;
+    margin: auto;
+}
+.nextBtn{
+    position: absolute;
+    right: 0px;
+    top:0;
+    bottom: 0;
+    max-height: 34px;
+    margin: auto;
+}
+.slideModel{
+   position: relative;
+    max-height: 70%;
+}
+.slideCloseBtn{
+    position: absolute;
+    padding: 10px !important;
+    right: 0px;
+    color: white;
+}
+.slideDim{
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 100%;
+    margin-top: 100px;
+}
+.imageDim{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.popup{
+    display: none;
+}
+.modPos{
+   width: 100% !important;
+    height: 100% !important;
+    display: none;
+    background-color: #737373;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.cursor{
+    cursor: pointer;
+}
+.whiteFont{
+    color: white;
+}
+.mailId{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+@media (max-width:1366px) and (min-width:992px){
+    .centerDiv{
+    font-size:16px;
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height:90%;
+    }
+}
+@media (max-width:992px){
+    .centerDiv{
+        font-size:16px;
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height:100%;
+    }
+}
+
