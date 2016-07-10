@@ -4,20 +4,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <body class="w3-container">
+<!--script for gallery tab    -->
+    <script>
 
-<h2>W3.CSS Modal</h2>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("albumYear");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-blue";
+}
+    var myBtn = document.getElementsByClassName("tablink")[0];
+    myBtn.click();
+    </script>
+<!--    end of gallery tab-->
+    
+<!--script fot gallery popup    -->
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn">Open Modal</button>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
-      <p>Some text. Some text. Some text.</p>
-      <p>Some text. Some text. Some text.</p>
-    </div>
-  </div>
-</div>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+<!--    end of gallery popup-->
             
 </body>
 </html>
