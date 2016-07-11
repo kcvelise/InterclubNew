@@ -4,8 +4,12 @@ html,body{
 }
 
 .sideNav{
-    background-color: #294356;
+    /*background-color: #294356;*/
     position: relative;
+    background-image: url('../images/side.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    
 }
 .sideNav a{
     padding: 0px !important;
@@ -167,3 +171,9 @@ html,body{
     }
 }
 
+.homesection{
+    background-image:url(../images/thumbnails/music.jpg);
+    background-position:bottom right;
+    background-size:contain;
+    background-repeat:no-repeat;
+}

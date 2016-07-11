@@ -1,3 +1,6 @@
+/// <reference path="jquery-1.8.3.min.js" />
+
+
 function openCity(evt, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("albumYear");
@@ -15,22 +18,23 @@ function openCity(evt, cityName) {
     myBtn.click();
 
 //
-
-
+  
+    
 var slideIndex = 1;
-showDivs(slideIndex);
+showDivs(slideIndex,'tshirt');
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDivs(n,parent) {
+  showDivs(slideIndex += n , parent);
 }
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function currentDiv(n ,parent) {
+  showDivs(slideIndex = n,parent);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+function showDivs(n,parent) {
+    var i;
+    var x = $('.' + parent).find(".mySlides");
+  //var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
