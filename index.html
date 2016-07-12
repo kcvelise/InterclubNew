@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/res-timeline.js"></script>
 </head>
 <body>
+    <div class="se-pre-con"></div>
     <nav class="w3-sidenav  w3-collapse w3-card-2 w3-animate-left sideNav overflow" style="width:250px;" id="mySidenav">
         <a href="javascript:void(0)" onclick="w3_close()" style="color:white"
            class="w3-closenav  w3-large w3-hide-large w3-right-align"><img src="images/thumbnails/largeicon/menu.png"></a>
@@ -88,7 +89,7 @@
                 <div id="2015" class="w3-container  albumYear">
                     
                     <div class="w3-row-padding w3-margin ">
-<div id="tshirt" onclick="document.getElementById('TshirtDesign').style.display = 'block'; initialiseGallery()" class="w3-col l2 m4 s6 cursor tshirt">
+<div id="tshirt" onclick="document.getElementById('TshirtDesign').style.display = 'block'; currentDiv(1, 'TshirtDesign')" class="w3-col l2 m4 s6 cursor tshirt">
 <div class="w3-card-4">
   <img src="images/Events/TshirtDesign/1.jpg" alt="Person" style="width:100%">
   <div class="w3-container">
@@ -283,7 +284,7 @@
     
 <!--    end of annual day gallery-->
     <!-- Rangoli -->
-    <div id="TshirtDesign" onload="alert('hello')" class="w3-animate-zoom modPos">
+    <div id="TshirtDesign"  class="w3-animate-zoom TshirtDesign modPos">
         <a onclick="document.getElementById('TshirtDesign').style.display = 'none'" class="whiteFont w3-padding w3-closebtn">&times;</a>
         <div class="w3-row slideDim tshirt">
 
@@ -323,8 +324,8 @@
 
         <div class="w3-center">
             <div class="w3-section">
-                <button class="w3-btn w3-blue" onclick="plusDivs(-1,'tshirt')">&lArr; Prev</button>
-                <button class="w3-btn w3-blue" onclick="plusDivs(1, 'tshirt')">Next &rArr;</button>
+                <button class="w3-btn w3-blue" onclick="plusDivs(-1, 'TshirtDesign')">&lArr; Prev</button>
+                <button class="w3-btn w3-blue" onclick="plusDivs(1, 'TshirtDesign')">Next &rArr;</button>
             </div>
             
         </div>
