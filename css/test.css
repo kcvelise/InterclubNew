@@ -32,7 +32,10 @@ html,body{
 .customFont{
     font-family: 'Josefin Slab', serif;
 }
-
+.customFont1{
+    font-family: Georgia, serif;
+    color: #832c73;
+}
 .navFooter{
     color: white;
     position: absolute;
@@ -83,6 +86,7 @@ html,body{
     position: fixed;
     width: 100%;
 }
+/*
 .prevBtn
 {
     top:0;
@@ -100,14 +104,15 @@ html,body{
     max-height: 34px;
     margin: auto;
 }
+*/
 
-.prev{
+.prevBtn{
     position:absolute;
     top:45%;
     left:0
 }
 
-.next{
+.nextBtn{
     position:absolute;
     top:45%;
     right:0
@@ -229,4 +234,11 @@ position: absolute;
 left: -20px;
 top: -20px;
 color: #7a7a7a;
+}
+
+.zeroMargin{
+    margin: 5px !important;
+}
+.contactIcons{
+    padding-bottom: 5px !important;
 }
