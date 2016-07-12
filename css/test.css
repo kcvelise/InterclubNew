@@ -51,6 +51,9 @@ html,body{
 .albumYear{
     display: none;
 }
+.division{
+    display:none;
+}
 .tabs a{
     cursor: pointer;
 }

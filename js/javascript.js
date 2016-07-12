@@ -23,8 +23,8 @@ function openYear(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.firstElementChild.className += " w3-border-blue";
 }
-//var myBtn = document.getElementsByClassName("yearTab")[0];
-//myBtn.click();
+var myBtn = document.getElementsByClassName("yearTab")[0];
+myBtn.click();
 
 //end of gallery tab
 
@@ -43,7 +43,8 @@ function openDivision(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.firstElementChild.className += " w3-border-red";
 }
-
+var myBtn = document.getElementsByClassName("Divisionlink")[0];
+myBtn.click();
 //
 
 
