@@ -51,67 +51,99 @@
         <div class="w3-row-padding navFooter">
             <div class="w3-row">
                 <div class="w3-col s4  w3-center">
-                    <img src="images/thumbnails/largeicon/facebook-1.png"></div>
+                    <img src="images/thumbnails/largeicon/facebook-1.png">
+                </div>
                 <div class="w3-col s4  w3-center">
-                    <img src="images/thumbnails/largeicon/youtube-2.png"></div>
+                    <img src="images/thumbnails/largeicon/youtube-2.png">
+                </div>
                 <div class="w3-col s4  w3-center">
-                    <img src="images/thumbnails/largeicon/envelope-1.png"></div>
+                    <img src="images/thumbnails/largeicon/envelope-1.png">
+                </div>
             </div>
         </div>
     </nav>
     <div class="w3-main content" style="margin-left:250px">
         <header class="w3-container w3-teal">
             <span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
-            
+
         </header>
         <div class="w3-container content ">
-            <div id="home" class="content ">
-                <div class=" w3-container overflow centerDiv">
-                    <h2 class="w3-center">All Work No Play Makes Everyone A Dull Boy !!!</h2>
-                    <p>This ancient saying still holds true, even in today's work environment where long working hours take a toll on ones psyche. There is always a need to provide them with a source of recreation and to strike a balance between Professional and Personal life!!!</p>
-                    <p>Creating an atmosphere of fun is one way to improve the work environment. Studies have proved that people who are cheerful and fun loving are more successful than that of others. Working with the jolly mind set and cheerful attitude acts as a catalyst to enhance performance. Active participation not only boosts ones confidence, but also makes one an ideal candidate.</p>
-                    <p>In our constant endeavor to make a mark for ourselves, we have encouraged and involved people beyond their skills at work. Interclub, an employee association within the organization, consists of vibrant and energetic enthusiasts who hold varied interests in life.</p>
-                    <p>Our sole aim at Interclub is to create a work atmosphere that is conducive in nurturing hidden talents and creating the industries best workforce. Interclub has actively coordinated and organized a gamut of events ranging from cultural, sports to CSR. All these events have witnessed active participation from all the different departments at HCCI. we at interclub always strive to have more employee participation and showcase their talents. It is Interclub which makes HCCI a dynamic workplace.</p>
+            <div id="home" class="content w3-margin-top ">
+                <div class=" w3-container overflow  w3-border-blue">
+                    <blockquote>All Work No Play Makes Everyone A Dull Boy !!!</blockquote>
+                    <div class="w3-container w3-leftbar w3-border-blue-grey">
+                        <p>This ancient saying still holds true, even in today's work environment where long working hours take a toll on ones psyche. There is always a need to provide them with a source of recreation and to strike a balance between Professional and Personal life!!!</p>
+                        <p>Creating an atmosphere of fun is one way to improve the work environment. Studies have proved that people who are cheerful and fun loving are more successful than that of others. Working with the jolly mind set and cheerful attitude acts as a catalyst to enhance performance. Active participation not only boosts ones confidence, but also makes one an ideal candidate.</p>
+                        <p>In our constant endeavor to make a mark for ourselves, we have encouraged and involved people beyond their skills at work. Interclub, an employee association within the organization, consists of vibrant and energetic enthusiasts who hold varied interests in life.</p>
+                        <p>Our sole aim at Interclub is to create a work atmosphere that is conducive in nurturing hidden talents and creating the industries best workforce. Interclub has actively coordinated and organized a gamut of events ranging from cultural, sports to CSR. All these events have witnessed active participation from all the different departments at HCCI. we at interclub always strive to have more employee participation and showcase their talents. It is Interclub which makes HCCI a dynamic workplace.</p>
+                    </div>
                 </div>
-                
+                <div class="w3-container">
+                    <div class="w3-row">
+                        <a href="#" onclick="openDivision(event, 'Cultural');">
+                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">Cultural</div>
+                        </a>
+                        <a href="#" onclick="openDivision(event, 'Sports');">
+                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">Sports</div>
+                        </a>
+                        <a href="#" onclick="openDivision(event, 'CSR');">
+                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">CSR</div>
+                        </a>
+                    </div>
+
+                    <div id="Cultural" class="w3-container division">
+                        <h2>London</h2>
+                        <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Sports" class="w3-container division">
+                        <h2>Paris</h2>
+                        <p>Paris is the capital of France.</p>
+                    </div>
+
+                    <div id="CSR" class="w3-container division">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                </div>
             </div>
             <div id="Gallery" class="content">
                 <h2 class="customFont">Gallery</h2>
                 <div class="w3-row tabs">
-                    <a onclick="openCity(event, '2015');">
-                        <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding">2015</div>
+                    <a onclick="openYear(event, '2015');">
+                        <div class="w3-half yearTab w3-bottombar w3-hover-light-grey w3-padding">2015</div>
                     </a>
-                    <a onclick="openCity(event, '2016');">
-                        <div class="w3-half tablink w3-bottombar w3-hover-light-grey w3-padding">2016</div>
+                    <a onclick="openYear(event, '2016');">
+                        <div class="w3-half yearTab w3-bottombar w3-hover-light-grey w3-padding">2016</div>
                     </a>
                 </div>
 
                 <div id="2015" class="w3-container  albumYear">
-                    
-                    <div class="w3-row-padding w3-margin ">
-<div id="tshirt" onclick="document.getElementById('TshirtDesign').style.display = 'block'; currentDiv(1, 'TshirtDesign')" class="w3-col l2 m4 s6 cursor tshirt">
-<div class="w3-card-4">
-  <img src="images/Events/TshirtDesign/1.jpg" alt="Person" style="width:100%">
-  <div class="w3-container">
-    <h4>Tshirt Design</h4>
-  </div>
-</div>
-</div>
 
-<div onclick="document.getElementById('annualDayGallery').style.display='block'" class="w3-col l2 m4 s6 cursor">
-<div class="w3-card-4">
-  <img src="images/img_avatar2.png" alt="Person" style="width:100%">
-  <div class="w3-container">
-    <h4>Annual Day</h4>
-  </div>
-</div>
-</div>
-</div>
+                    <div class="w3-row-padding w3-margin ">
+                        <div id="tshirt" onclick="document.getElementById('TshirtDesign').style.display = 'block'; currentDiv(1, 'TshirtDesign')" class="w3-col l2 m4 s6 cursor tshirt">
+                            <div class="w3-card-4">
+                                <img src="images/Events/TshirtDesign/1.jpg" alt="Person" style="width:100%">
+                                <div class="w3-container">
+                                    <h4>Tshirt Design</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div onclick="document.getElementById('annualDayGallery').style.display='block'" class="w3-col l2 m4 s6 cursor">
+                            <div class="w3-card-4">
+                                <img src="images/img_avatar2.png" alt="Person" style="width:100%">
+                                <div class="w3-container">
+                                    <h4>Annual Day</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
                 <div id="2016" class="w3-container albumYear">
-                    
+
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                         aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
@@ -159,7 +191,7 @@
             </div>
             <div id="outTeam" class="content overflow">
                 <h2 class="w3-center customFont bold">OurTeam</h2>
-                
+
                 <div class="w3-row-padding">
                     <div class=" w3-white w3-col l3">
                         <div class="w3-container w3-card">
@@ -170,7 +202,7 @@
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
-                    
+
                     <div class=" w3-white w3-col l3 ">
                         <div class="w3-container w3-card">
                             <h4 class="w3-center">Rajesh</h4>
@@ -180,7 +212,7 @@
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
-                    
+
                     <div class=" w3-white w3-col l3 ">
                         <div class="w3-container w3-card">
                             <h4 class="w3-center">Rajesh</h4>
@@ -196,8 +228,8 @@
                             <h4 class="w3-center">Rajesh</h4>
                             <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                             <hr>
-            <p><img src="images/thumbnails/small/smartphone-1.png"> 9866884449</p>
-                           
+                            <p><img src="images/thumbnails/small/smartphone-1.png"> 9866884449</p>
+
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
@@ -213,7 +245,7 @@
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
-                    
+
                     <div class=" w3-white w3-col l3 ">
                         <div class="w3-container w3-card-4">
                             <h4 class="w3-center">Rajesh</h4>
@@ -223,7 +255,7 @@
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
-                    
+
                     <div class=" w3-white w3-col l3 ">
                         <div class="w3-container w3-card-4">
                             <h4 class="w3-center">Rajesh</h4>
@@ -239,8 +271,8 @@
                             <h4 class="w3-center">Rajesh</h4>
                             <p class="w3-center"><img src="images/img_avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                             <hr>
-            <p><img src="images/thumbnails/small/smartphone-1.png"> 9866884449</p>
-                           
+                            <p><img src="images/thumbnails/small/smartphone-1.png"> 9866884449</p>
+
                             <p><img src="images/thumbnails/small/envelope-1.png"> abc@xyz.com</p>
                         </div>
                     </div>
@@ -256,37 +288,37 @@
             document.getElementById("mySidenav").style.display = "none";
         }
     </script>
-    
 
-    
-<!--slide show items    -->
-<!--annual day gallery    -->
-<div id="annualDayGallery" class="w3-animate-zoom modPos">
+
+
+    <!--slide show items    -->
+    <!--annual day gallery    -->
+    <div id="annualDayGallery" class="w3-animate-zoom modPos">
         <a onclick="document.getElementById('annualDayGallery').style.display='none'" class="whiteFont w3-padding w3-closebtn">&times;</a>
-<div class="w3-row slideDim">
-    
-<img  src="images/img_avatar2.png" class="imageDim mySlides"/>
-<img  src="images/test.jpg" class="imageDim mySlides"/>
-<img  src="images/slideshow/img_fjords_wide.jpg" class="imageDim mySlides"/>
-       
-</div>
-    
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="w3-btn w3-blue" onclick="plusDivs(-1)">&lArr; Prev</button>
-    <button class="w3-btn w3-blue" onclick="plusDivs(1)">Next &rArr;</button>
-  </div>
-  <!--<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
-  <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
-  <button class="w3-btn demo" onclick="currentDiv(3)">3</button>-->
-</div>    
-    </div>    
-    
-<!--    end of annual day gallery-->
+        <div class="w3-row slideDim">
+
+            <img src="images/img_avatar2.png" class="imageDim mySlides" />
+            <img src="images/test.jpg" class="imageDim mySlides" />
+            <img src="images/slideshow/img_fjords_wide.jpg" class="imageDim mySlides" />
+
+        </div>
+
+        <div class="w3-center">
+            <div class="w3-section">
+                <button class="w3-btn w3-blue" onclick="plusDivs(-1)">&lArr; Prev</button>
+                <button class="w3-btn w3-blue" onclick="plusDivs(1)">Next &rArr;</button>
+            </div>
+            <!--<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+            <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+            <button class="w3-btn demo" onclick="currentDiv(3)">3</button>-->
+        </div>
+    </div>
+
+    <!--    end of annual day gallery-->
     <!-- Rangoli -->
-    <div id="TshirtDesign"  class="w3-animate-zoom TshirtDesign modPos">
+    <div id="TshirtDesign" class="w3-animate-zoom TshirtDesign modPos">
         <a onclick="document.getElementById('TshirtDesign').style.display = 'none'" class="whiteFont w3-padding w3-closebtn">&times;</a>
-        <div class="w3-row slideDim tshirt">
+        <div class="w3-row slideDim tshirt relPos">
 
             <img src="images/Events/TshirtDesign/1.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/2.jpg" class="imageDim mySlides" />
@@ -324,16 +356,16 @@
 
         <div class="w3-center">
             <div class="w3-section">
-                <button class="w3-btn w3-blue" onclick="plusDivs(-1, 'TshirtDesign')">&lArr; Prev</button>
-                <button class="w3-btn w3-blue" onclick="plusDivs(1, 'TshirtDesign')">Next &rArr;</button>
+                <button class="w3-btn w3-blue prev" onclick="plusDivs(-1, 'TshirtDesign')">&lArr; Prev</button>
+                <button class="w3-btn w3-blue next" onclick="plusDivs(1, 'TshirtDesign')">Next &rArr;</button>
             </div>
-            
+
         </div>
     </div>
 
 
     <!-- end of rangoli-->
-<!--    end of slide show items-->
+    <!--    end of slide show items-->
     <script src="js/javascript.js"></script>
 </body>
 </html>

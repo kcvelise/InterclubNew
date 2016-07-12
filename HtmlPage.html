@@ -4,6 +4,7 @@
     <title>W3.CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/test.css" />
     <script src="js/jquery-1.8.3.min.js"></script>
     <style>
         .mySlides {
@@ -22,12 +23,12 @@
   <div class="w3-modal-content">
     <div class="w3-container">
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
-      <div class="w3-content relPos" style="max-width:800px;position:relative">
+      <div class="w3-content relPos" style="max-width:800px">
   <img class="mySlides" src="images/HomeSlides/img_chicago.jpg" style="width:100%">
   <img class="mySlides" src="images/HomeSlides/img_la.jpg" style="width:100%">
   <img class="mySlides" src="images/HomeSlides/img_ny.jpg" style="width:100%">
-    <a class="w3-btn " style="position:absolute;top:45%;left:0" onclick="plusDivs(-1,'mod1')">❮ Prev</a>
-    <a class="w3-btn " style="position:absolute;top:45%;right:0" onclick="plusDivs(1,'mod1')">Next ❯</a>
+    <a class="w3-btn prev "  onclick="plusDivs(-1,'mod1')">❮ Prev</a>
+    <a class="w3-btn next "  onclick="plusDivs(1,'mod1')">Next ❯</a>
 </div>
 
 
