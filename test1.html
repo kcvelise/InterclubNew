@@ -1,39 +1,103 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        p {
-            white-space: nowrap;
+<h1 id="header">
+   Food Inventory
+</h1>
+<div id="content" ng-controller="FoodController">
+    <div class="filter">
+      <label for="filter">filter:</label>
+      <input type="text" name="filter" ng-model="filter" />
+    </div>
+    <table>
+      <thead>
+        <tr class="row">
+          <th><a ng-click="changeSort('name')">Name</a></th>
+          <th><a ng-click="changeSort('type')">Type</a></th>
+          <th><a ng-click="changeSort('expiration')">Expiration</a></th>
+          <th><a ng-click="changeSort('quantity')">Quantity</a></th>
+          <th><a ng-click="changeSort('percentRemaining')">Percent Remaining</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row" ng-repeat="f in food | filter:filter | orderBy:sort:reverse">
+            <td>{{f.name}}</td>
+            <td>{{f.type}}</td>
+            <td>{{f.expiration}}</td>
+            <td>{{f.quantity}}</td>
+            <td class="progress"><div class="bar" style="width: {{f.percentRemaining}}%"</td>
+        </tr>
+      </tbody>
+    </table>
+
+  <button ng-click="toggleForm()" ng-hide="isFormActive">Add One</button>
+  <button ng-click="toggleForm()" ng-show="isFormActive">Hide Form</button>
+  <form ng-show="isFormActive">
+      <hr />
+      <label for="name">Name:</label>
+      <input name="name" ng-model="editableFood.name" />
+      <br />
+
+      <label for="type">Type:</label>
+      <input name="type" ng-model="editableFood.type" />
+      <br />
+
+      <label for="expiration">Expiration</label>
+      <input name="expiration" ng-model="editableFood.expiration" />
+      <br />
+
+      <label for="quantity">Quantity</label>
+      <input name="quantity" ng-model="editableFood.quantity" />
+      <br />
+
+      <label for="percentRemaining">Percent Remaining</label>
+      <input name="percentRemaining" ng-model="editableFood.percentRemaining" /><br />
+
+        <div class="span4 text-right">
+          <div class="row">
+            <button ng-click="toggleForm()">Cancel</button>
+            <button ng-click="addFood()">Add</button>
+          </div>
+        </div>
+  </form>
+</div>
+<div id="footer">
+    <a target="_blank" href="http://sailsjs.com" class="copyright">Built with Sails.js</a>
+</div>
+
+<style type="text/css">
+  label { width: 150px; display:inline-block; text-align:right; }
+  button { margin-right: 10px;}
+  .text-right { text-align: right;}
+</style>
+
+<script type='text/javascript'>
+    var foodApp = angular.module('foodApp', ['ngResource']);
+    foodApp.factory('Food', ['$resource', function($resource){
+        return $resource('/food/:id', {id:'@id'});
+    }]);
+    function FoodController($scope, Food){
+      $scope.food = Food.query();
+      $scope.isFormActive = false;
+      $scope.sort = "name";
+      $scope.reverse = false;
+      $scope.changeSort = function(value){
+          if ($scope.sort == value){
+            $scope.reverse = !$scope.reverse;
+            return;
+          }
+          $scope.sort = value;
+          $scope.reverse = false;
+      }
+      $scope.toggleForm = function(){
+        if ($scope.isFormActive){
+            $scope.isFormActive = false;
+            return;
         }
-
-        blockquote {
-font-family: Georgia, serif;
-font-size: 18px;
-font-style: italic;
-width: 500px;
-margin: 0.25em 0;
-padding: 0.25em 40px;
-line-height: 1.45;
-position: relative;
-color: #383838;
-}
-
-        blockquote:before {
-display: block;
-content: "\201C";
-font-size: 80px;
-position: absolute;
-left: -20px;
-top: -20px;
-color: #7a7a7a;
-}
-    </style>
-</head>
-<body>
-<p>This ancient saying still holds true, even in today's work environment where long working hours take a toll on ones psyche. There is always a need to provide them with a source of recreation and to strike a balance between Professional and Personal life!!!</p>
-                        <p>Creating an atmosphere of fun is one way to improve the work environment. Studies have proved that people who are cheerful and fun loving are more successful than that of others. Working with the jolly mind set and cheerful attitude acts as a catalyst to enhance performance. Active participation not only boosts ones confidence, but also makes one an ideal candidate.</p>
-                        <p>In our constant endeavor to make a mark for ourselves, we have encouraged and involved people beyond their skills at work. Interclub, an employee association within the organization, consists of vibrant and energetic enthusiasts who hold varied interests in life.</p>
-                        <p>Our sole aim at Interclub is to create a work atmosphere that is conducive in nurturing hidden talents and creating the industries best workforce. Interclub has actively coordinated and organized a gamut of events ranging from cultural, sports to CSR. All these events have witnessed active participation from all the different departments at HCCI. we at interclub always strive to have more employee participation and showcase their talents. It is Interclub which makes HCCI a dynamic workplace.</p>
-
-</body>
-</html>
+        $scope.isFormActive = true;
+        $scope.editableFood = new Food();
+      };
+      $scope.addFood = function(){
+            $scope.editableFood.$save();
+            $scope.food.push($scope.editableFood);
+            $scope.toggleForm();
+      };
+    };
+</script>
