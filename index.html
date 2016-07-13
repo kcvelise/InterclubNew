@@ -30,7 +30,11 @@
                     <img src="images/thumbnails/largeicon/about.jpg"><span class="navFont">About</span>
                 </li>
             </a>
-
+            <a onclick="$('#OurWork').animatescroll()">
+                <li class="w3-padding-8 w3-white">
+                    <img src="images/thumbnails/largeicon/users.png"><span class="navFont">Our Work</span>
+                </li>
+            </a>
             <a onclick="$('#Gallery').animatescroll()">
                 <li class="w3-padding-8 w3-white">
                     <img src="images/thumbnails/largeicon/picture.png"></i><span class="navFont">Gallery</span>
@@ -78,53 +82,90 @@
                         <p>Our sole aim at Interclub is to create a work atmosphere that is conducive in nurturing hidden talents and creating the industries best workforce. Interclub has actively coordinated and organized a gamut of events ranging from cultural, sports to CSR. All these events have witnessed active participation from all the different departments at HCCI. we at interclub always strive to have more employee participation and showcase their talents. It is Interclub which makes HCCI a dynamic workplace.</p>
                     </div>
                 </div>
+
+            </div>
+            <div id="OurWork" class="w3-container content overflow">
+                <h2 class="w3-center customFontStyle">Our Work</h2>
                 <div class="w3-container">
                     <div class="w3-row">
-                        <a href="#" onclick="openDivision(event, 'Cultural');">
-                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">Cultural</div>
+                        <a  onclick="openDivision(event, 'Cultural');">
+                            <div class="w3-third Divisionlink cursor w3-bottombar w3-hover-light-grey w3-padding">Cultural</div>
                         </a>
-                        <a href="#" onclick="openDivision(event, 'Sports');">
-                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">Sports</div>
+                        <a  onclick="openDivision(event, 'Sports');">
+                            <div class="w3-third Divisionlink cursor w3-bottombar w3-hover-light-grey w3-padding">Sports</div>
                         </a>
-                        <a href="#" onclick="openDivision(event, 'CSR');">
-                            <div class="w3-third Divisionlink w3-bottombar w3-hover-light-grey w3-padding">CSR</div>
+                        <a  onclick="openDivision(event, 'CSR');">
+                            <div class="w3-third Divisionlink cursor w3-bottombar w3-hover-light-grey w3-padding">CSR</div>
                         </a>
                     </div>
 
                     <div id="Cultural" class="w3-container division overflow">
                         <div class="w3-container overflow">
-                        
-                        <p>
-                            Interclub organizes and celebrates Unity in diversity. Cultural activites at Interclub links people from different geographical locations and reinforces the significance of Culture and Traditions.
-                            Events organized by Cultural Team have always brought in a lot of participation and showcased the hidden talents of the employees. Our sole idea was to find a place where we would be able to map the mutual relationship between the techies and culture, and examine their reciprocity.
-                        </p>
-                        <p> Different events are planned and one will be organized each month under "Event of the Month" program which covers a wide variety of activities both on and off campus. Cultural committee aims to bring out talents in the employees in all the possible forms whether its music, dance, theatre, literary skills, sketching or other fine artstyles. In order to showcase these talents various competitions like...</p>
-                        
-                            <b>Ethnic Wear Day</b>,
-                            <b>Anthakshari Evenings</b>,
-                            <b>Short Film Competitions</b>,
-                            <b>Ice Breaker Events</b>,
-                            <b>Painting Competitions</b>,
-                            <b>Photography Contests</b>,
-                            <b>Company Day Celebrations</b>,
-                            <b>Rangoli Competitions</b>,
-                            <b>Bay Decoration Contests and many more fun filled events which are organized throughout the year.</b>,
-
-                        
-                        <p>Cultural committee also organizes various festivals like Dussera, Diwali, Onam, Ramzan, Christmas along with few regional festivals like Pongal and Ugadi. This helps to sensitize all towards the wide spectrum of beliefs which have harmoniously coexisted in India and spreading the message of peace and brotherhood which have transpired since ages through these festivals.</p>
-
-                    </div>
-
-                    <div id="Sports" class="w3-container division">
-                        <h2>Paris</h2>
-                        <p>Paris is the capital of France.</p>
-                    </div>
-
-                    <div id="CSR" class="w3-container division">
-                        <h2>Tokyo</h2>
-                        <p>Tokyo is the capital of Japan.</p>
-                    </div>
+                            <h2>Cultural Activities</h2>
+                            <p>
+                                Interclub organizes and celebrates Unity in diversity. Cultural activites at Interclub links people from different geographical locations and reinforces the significance of Culture and Traditions.
+                                Events organized by Cultural Team have always brought in a lot of participation and showcased the hidden talents of the employees. Our sole idea was to find a place where we would be able to map the mutual relationship between the techies and culture, and examine their reciprocity.
+                            </p>
+                            <p> Different events are planned and one will be organized each month under "Event of the Month" program which covers a wide variety of activities both on and off campus. Cultural committee aims to bring out talents in the employees in all the possible forms whether its music, dance, theatre, literary skills, sketching or other fine artstyles. In order to showcase these talents various competitions like...</p>
+                            <ul>
+                                <li>Ethnic Wear Day</li>
+                                <li>Anthakshari Evenings</li>
+                                <li>Short Film Competitions</li>
+                                <li>Ice Breaker Events</li>
+                                <li>Painting Competitions</li>
+                                <li>Photography Contests</li>
+                                <li>Company Day Celebrations</li>
+                                <li>Rangoli Competitions</li>
+                                <li>Bay Decoration Contests and many more fun filled events which are organized throughout the year.</li>
+                            </ul>
+                            <p>Cultural committee also organizes various festivals like Dussera, Diwali, Onam, Ramzan, Christmas along with few regional festivals like Pongal and Ugadi. This helps to sensitize all towards the wide spectrum of beliefs which have harmoniously coexisted in India and spreading the message of peace and brotherhood which have transpired since ages through these festivals.</p>
                         </div>
+                    </div>
+                    <div id="Sports" class="w3-container division overflow">
+                        <h2>Sports</h2>
+                        <p> Sports commonly refer to activities where the physical capabilities of the competitor are the sole or primary determiner of the outcome. Sport is commonly defined as an organized, competitive and skilful physical activity requiring commitment and fair play.</p>
+                        <p>Sports also teach teamwork and give a sense of pride and accomplishment. At the same time, they can teach to accept losing as part of competition, so that they are not constantly hurt by it. Learning to lose is part of learning to win.</p>
+                        <p>We at HCCI encourage and engage employees in a plethora of games and sports activities. Infrastructure and facilities provided by the organization provide a fillip to the sports enthusiasts. Well-equipped gymnasium, table tennis and badminton court hold regular practice sessions. Interclub organizes annual tournaments and rewards the champions from different games and sports every year.</p>
+                        <p>Interclub conducts and also participates in various sports events such as</p>
+                        <ul>
+                            <li>Badminton</li>
+                            <li>Cycling</li>
+                            <li>Carroms</li>
+                            <li>Chess</li>
+                            <li>Cricket</li>
+                            <li>Women Cricket</li>
+                            <li>Football</li>
+                            <li>foosball</li>
+                            <li>Swimming</li>
+                            <li>TableTennis</li>
+                            <li>Throwball</li>
+                            <li>Volleyball</li>
+                        </ul>
+                        <p>If you would like to subscribe for regular sports updates, send an email to Sports Committee</p>
+                        <p class="centrealign">"Talent wins games, but teamwork and team spirit wins championships."</p>
+
+                    </div>
+
+                    <div id="CSR" class="w3-container division overflow">
+                        <h2>CSR</h2>
+                        <p>There is always a question which haunts many of us about what we are doing for our soceity, apart from leading a monotonous life cycle of coming to office and spending the pay check that we get by end of the month. You may say that you are paying hefty amounts to government in the form of taxes which in return takes care of people who are in need. If that is your answer, it is definitely not the right one! </p>
+                        <p>Corporate Social Responsibility is best achieved when societal responsibility is integral part of our life. Interclub does different CSR activities to lend a helping hand for the poeple who are in need. The main objective of CSR activities is to lighten up the spirits in the people by helping them in all possible ways.
+                        <p>
+                            Our employees have participated and contributed to the cause of social welfare, education and skills development, women empowerment among others.
+                            Please find our recent activities which had a great effective response from employees. Our CSR volunteers play a great role in doing their bit in CSR activites.If you are interested to be a part of our CSR activities, Please send an email to D-IN-CSR VOLUNTEERS.
+                        </p>
+                        <ul>
+                            <li>Fund raising events for Flood Victims (Uttarakhand & AndhraPradesh) </li>
+                            <li>Blood Donation Drives</li>
+                            <li>School Kit Drives</li>
+                            <li>Go Green Activites</li>
+                            <li>Blanket Distribution Drives</li>
+                            <li>Organ Donation Camps</li>
+                            <li>Materialistic Donations for the needy</li>
+                        </ul>
+                        <p class="centrealign">"We make a LIVING by what we GET, But we make a LIFE by what we GIVE - Wiston Churchill"</p>
+
+                    </div>
                 </div>
             </div>
             <div id="Gallery" class="content">
@@ -178,15 +219,11 @@
 
                             <div class="layout1">
                                 <div class="left">
-                                    <img src="images/img_avatar2.png" alt="image alt" />
+                                    <!--<img src="images/img_avatar2.png" alt="image alt" />-->
                                 </div>
                                 <div class="right">
                                     <h3>Women's Day</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                                        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                                    </p>
+
                                 </div>
                             </div>
                             <span class="date"><i class="fa fa-calendar"></i>02.03.2016</span>
@@ -210,99 +247,32 @@
                 </div>
             </div>
             <div id="outTeam" class="content overflow">
-                <h2 class="w3-center customFont bold">OurTeam</h2>
+                <h2 class="w3-center customFont bold">Team InterClub</h2>
 
                 <div class="w3-row-padding">
                     <div class=" w3-white w3-col l3">
                         <div class="w3-container w3-round-large w3-card-4">
-                            
                             <p class="w3-center"><img src="images/profiles/chaitanya2.JPG" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
                             <h5 class="w3-center">Krishna Chaitanya</h5>
                             <p class="w3-center">President</p>
                             <hr class="zeroMargin">
                             <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">9866677333</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Krishna.Velisetty@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div class=" w3-white w3-col l3 ">
-                        <div class="w3-container w3-card-4">
-                            <p class="w3-center"><img src="images/profiles/Divya1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                            <h5 class="w3-center">Divya Yelisetti</h5>
-                            <p class="w3-center">Cultural Committee</p>
-                            <hr class="zeroMargin">
-                            <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+91xxxxxxxxxx</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Divya.Yelisetti@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" w3-white w3-col l3 ">
-                        <div class="w3-container w3-card-4">
-                            <p class="w3-center"><img src="images/profiles/Kevin.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                            <h5 class="w3-center">Kevin Jacob</h5>
-                            <p class="w3-center">Cultural Committee</p>
-                            <hr class="zeroMargin">
-                            <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+919160105631</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Kevin.Jacob@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" w3-white w3-col l3 ">
-                        <div class="w3-container w3-card-4">
-                            <p class="w3-center"><img src="images/profiles/Renuka.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                            <h5 class="w3-center">Renuka Sravya</h5>
-                            <p class="w3-center">Cultural Committee</p>
-                            <hr class="zeroMargin">
-                            <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+919160387503</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:RenukaSravya.Tenneti@hexagon-cci.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="w3-row-padding">
-                    <div class=" w3-white w3-col l3 ">
-                        <div class="w3-container w3-card-4">
-                            <p class="w3-center"><img src="images/img_avatar2.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                            <h5 class="w3-center">Bommaganti Krishna</h5>
-                            <p class="w3-center">Cultural Committee</p>
-                            <hr class="zeroMargin">
-                            <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+918121437110</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Krishna.Bommaganti@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
+                                
+                                <div class="w3-col l4 m6 s6 w3-center w3-border-right ">
+                                    <a href="mailto:Krishna.Velisetty@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
+                                <div class="w3-col l4 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/largeicon/telephone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                     class="w3-text w3-tag w3-round-xlarge">5366</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l4 m6 s6 w3-center">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">9866677333</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -314,13 +284,35 @@ class="w3-text w3-tag w3-round-xlarge">+918121437110</span></p>
                             <p class="w3-center">Sports Committee</p>
                             <hr class="zeroMargin">
                             <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+919550993388</span></p> 
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+919550993388</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Diwakar.Jammula@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
                             </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Diwakar.Jammula@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
+                        </div>
+                    </div>
+
+                    <div class=" w3-white w3-col l3 ">
+                        <div class="w3-container w3-card-4">
+                            <p class="w3-center"><img src="images/profiles/Monica1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                            <h5 class="w3-center">Monica Mohapatra</h5>
+                            <p class="w3-center">Sports Committee</p>
+                            <hr class="zeroMargin">
+                            <div class="w3-row contactIcons">
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+918790640294</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Monica.Mohapatra@hexagongeospatial.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -332,33 +324,100 @@ class="w3-text w3-tag w3-round-xlarge">+919550993388</span></p>
                             <p class="w3-center">Sports Committee</p>
                             <hr class="zeroMargin">
                             <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+919177340427</span></p> 
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+919177340427</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Nripan.Valoor@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
                             </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Nripan.Valoor@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="w3-row-padding">
+                    <div class=" w3-white w3-col l3 ">
+                        <div class="w3-container w3-card-4">
+                            <p class="w3-center"><img src="images/profiles/Krishna.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                            <h5 class="w3-center">Bommaganti Krishna</h5>
+                            <p class="w3-center">Cultural Committee</p>
+                            <hr class="zeroMargin">
+                            <div class="w3-row contactIcons">
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+918121437110</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Krishna.Bommaganti@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class=" w3-white w3-col l3 ">
                         <div class="w3-container w3-card-4">
-                            <p class="w3-center"><img src="images/profiles/Monica1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                            <h5 class="w3-center">Monica Mohapatra</h5>
-                            <p class="w3-center">Sports Committee</p>
+                            <p class="w3-center"><img src="images/profiles/Divya1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                            <h5 class="w3-center">Divya Yelisetti</h5>
+                            <p class="w3-center">Cultural Committee</p>
                             <hr class="zeroMargin">
                             <div class="w3-row contactIcons">
-                            <div class="w3-col l6 m6 s6 w3-center w3-border-right">
-                            <p class="w3-tooltip cursor"><img  src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
-class="w3-text w3-tag w3-round-xlarge">+918790640294</span></p> 
-                            </div>
-                            <div class="w3-col l6 m6 s6 w3-center">
-                              <a href="mailto:Monica.Mohapatra@hexagongeospatial.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>  
-                            </div>    
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+91xxxxxxxxxx</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Divya.Yelisetti@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class=" w3-white w3-col l3 ">
+                        <div class="w3-container w3-card-4">
+                            <p class="w3-center"><img src="images/profiles/Renuka.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                            <h5 class="w3-center">Renuka Sravya</h5>
+                            <p class="w3-center">Cultural Committee</p>
+                            <hr class="zeroMargin">
+                            <div class="w3-row contactIcons">
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+919160387503</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:RenukaSravya.Tenneti@hexagon-cci.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" w3-white w3-col l3 ">
+                        <div class="w3-container w3-card-4">
+                            <p class="w3-center"><img src="images/profiles/Kevin.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                            <h5 class="w3-center">Kevin Jacob</h5>
+                            <p class="w3-center">Cultural Committee</p>
+                            <hr class="zeroMargin">
+                            <div class="w3-row contactIcons">
+                                <div class="w3-col l6 m6 s6 w3-center w3-border-right">
+                                    <p class="w3-tooltip cursor">
+                                        <img src="images/thumbnails/small/smartphone-1.png"><span style="position:absolute;left:0;bottom:30px"
+                                                                                                  class="w3-text w3-tag w3-round-xlarge">+919160105631</span>
+                                    </p>
+                                </div>
+                                <div class="w3-col l6 m6 s6 w3-center">
+                                    <a href="mailto:Kevin.Jacob@intergraph.com"><p><img src="images/thumbnails/small/envelope-1.png"></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>

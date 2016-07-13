@@ -36,6 +36,9 @@ html,body{
     font-family: Georgia, serif;
     color: #832c73;
 }
+.customFontStyle{
+    font-family: Georgia, serif;
+}
 .navFooter{
     color: white;
     position: absolute;
