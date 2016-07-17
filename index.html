@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/res-timeline.css">
     <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=David+Libre|Josefin+Slab" rel="stylesheet">
@@ -72,7 +73,7 @@
 
         </header>
         <div class="w3-container content ">
-            <div id="home" class="content w3-margin-top overflow ">
+            <div id="home" class="content w3-margin-top ">
                 <div class=" w3-container centerDiv overflow  w3-border-blue">
                     <blockquote>All Work No Play Makes Everyone A Dull Boy !!!</blockquote>
                     <div class="w3-container w3-leftbar w3-border-blue-grey">
@@ -99,7 +100,7 @@
                         </a>
                     </div>
 
-                    <div id="Cultural" class="w3-container division overflow">
+                    <div id="Cultural" class="w3-container division">
                         <div class="w3-container overflow">
                             <h3>Cultural Activities</h3>
                             <p>
@@ -121,7 +122,7 @@
                             <p>Cultural committee also organizes various festivals like Dussera, Diwali, Onam, Ramzan, Christmas along with few regional festivals like Pongal and Ugadi. This helps to sensitize all towards the wide spectrum of beliefs which have harmoniously coexisted in India and spreading the message of peace and brotherhood which have transpired since ages through these festivals.</p>
                         </div>
                     </div>
-                    <div id="Sports" class="w3-container division overflow">
+                    <div id="Sports" class="w3-container division ">
                         <h3>Sports</h3>
                         <p> Sports commonly refer to activities where the physical capabilities of the competitor are the sole or primary determiner of the outcome. Sport is commonly defined as an organized, competitive and skilful physical activity requiring commitment and fair play.</p>
                         <p>Sports also teach teamwork and give a sense of pride and accomplishment. At the same time, they can teach to accept losing as part of competition, so that they are not constantly hurt by it. Learning to lose is part of learning to win.</p>
@@ -146,7 +147,7 @@
 
                     </div>
 
-                    <div id="CSR" class="w3-container division overflow">
+                    <div id="CSR" class="w3-container division">
                         <h3>CSR</h3>
                         <p>There is always a question which haunts many of us about what we are doing for our soceity, apart from leading a monotonous life cycle of coming to office and spending the pay check that we get by end of the month. You may say that you are paying hefty amounts to government in the form of taxes which in return takes care of people who are in need. If that is your answer, it is definitely not the right one! </p>
                         <p>Corporate Social Responsibility is best achieved when societal responsibility is integral part of our life. Interclub does different CSR activities to lend a helping hand for the poeple who are in need. The main objective of CSR activities is to lighten up the spirits in the people by helping them in all possible ways.
@@ -191,7 +192,7 @@
                             </div>
                         </div>
 
-                        <div onclick="document.getElementById('annualDayGallery').style.display='block'" class="w3-col l2 m4 s6 cursor">
+                        <div onclick="document.getElementById('gallery').style.display='block';currentDiv(1, 'sampleGallery')" class="w3-col l2 m4 s6 cursor">
                             <div class="w3-card-4">
                                 <img src="images/img_avatar2.png" alt="Person" style="width:100%">
                                 <div class="w3-container">
@@ -484,25 +485,24 @@
 
     <!--slide show items    -->
     <!--annual day gallery    -->
-    <div id="annualDayGallery" class="w3-animate-zoom modPos">
-        <a onclick="document.getElementById('annualDayGallery').style.display='none'" class="whiteFont w3-padding w3-closebtn">&times;</a>
-        <div class="w3-row slideDim">
-
-            <img src="images/img_avatar2.png" class="imageDim mySlides" />
-            <img src="images/test.jpg" class="imageDim mySlides" />
-            <img src="images/slideshow/img_fjords_wide.jpg" class="imageDim mySlides" />
-
+    <div id="gallery" class="w3-container w3-animate-zoom sampleGallery pop">
+        <a onclick="document.getElementById('gallery').style.display='none'" class="w3-padding w3-closebtn clsBtn">&times;</a>
+        <div class="w3-row">
+        <div class="w3-col w3-teal l6">
+            <div class="w3-container container w3-card-16 ">
+       <img src="images/HomeSlides/test1.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test2.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test3.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test4.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test5.jpg" class="imageStyle Slides"/>
+        <img src="images/HomeSlides/test6.jpg" class="imageStyle Slides"/>
+    <a onclick="plusDivs1(-1, 'sampleGallery')"><img src="images/HomeSlides/left.png" class="prevBtn"/></a>
+        <a onclick="plusDivs1(1, 'sampleGallery')"><img src="images/HomeSlides/right.png" class="nextBtn"/></a>
+    </div>
         </div>
-
-        <div class="w3-center">
-            <div class="w3-section">
-                <button class="w3-btn w3-blue" onclick="plusDivs(-1)">&lArr; Prev</button>
-                <button class="w3-btn w3-blue" onclick="plusDivs(1)">Next &rArr;</button>
-            </div>
-            <!--<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
-            <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
-            <button class="w3-btn demo" onclick="currentDiv(3)">3</button>-->
         </div>
+    
     </div>
 
     <!--    end of annual day gallery-->
@@ -510,11 +510,13 @@
     <div id="TshirtDesign" class="w3-animate-zoom TshirtDesign modPos">
         <a onclick="document.getElementById('TshirtDesign').style.display = 'none'" class="whiteFont w3-padding w3-closebtn">&times;</a>
         <div class="w3-row slideDim tshirt relPos">
-
-            <img src="images/Events/TshirtDesign/1.JPG" class="imageDim mySlides" />
-            <img src="images/Events/TshirtDesign/2.jpg" class="imageDim mySlides" />
-            <img src="images/Events/TshirtDesign/3.jpg" class="imageDim mySlides" />
-            <img src="images/Events/TshirtDesign/4.jpg" class="imageDim mySlides" />
+            
+            
+            
+            <img src="images/HomeSlides/test.jpg" class="imageDim mySlides" />
+            <img src="images/HomeSlides/test1.jpg" class="imageDim mySlides" />
+            <img src="images/HomeSlides/test2.jpg" class="imageDim mySlides" />
+            <img src="images/HomeSlides/test3.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/5.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/6.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/7.jpg" class="imageDim mySlides" />
@@ -543,12 +545,14 @@
             <img src="images/Events/TshirtDesign/30.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/31.jpg" class="imageDim mySlides" />
             <img src="images/Events/TshirtDesign/32.jpg" class="imageDim mySlides" />
+            <button class="w3-btn w3-blue prevBtn" onclick="plusDivs(-1, 'TshirtDesign')">&lArr; Prev</button>
+                <button class="w3-btn w3-blue nextBtn" onclick="plusDivs(1, 'TshirtDesign')">Next &rArr;</button>
+                
         </div>
 
         <div class="w3-center">
             <div class="w3-section">
-                <button class="w3-btn w3-blue prev" onclick="plusDivs(-1, 'TshirtDesign')">&lArr; Prev</button>
-                <button class="w3-btn w3-blue next" onclick="plusDivs(1, 'TshirtDesign')">Next &rArr;</button>
+                
             </div>
 
         </div>
@@ -557,6 +561,25 @@
 
     <!-- end of rangoli-->
     <!--    end of slide show items-->
+  <script>
+var slideIndex = 1;
+showDivs1(slideIndex);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex += n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
     <script src="js/javascript.js"></script>
 </body>
 </html>
