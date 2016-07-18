@@ -1,103 +1,32 @@
-<h1 id="header">
-   Food Inventory
-</h1>
-<div id="content" ng-controller="FoodController">
-    <div class="filter">
-      <label for="filter">filter:</label>
-      <input type="text" name="filter" ng-model="filter" />
-    </div>
-    <table>
-      <thead>
-        <tr class="row">
-          <th><a ng-click="changeSort('name')">Name</a></th>
-          <th><a ng-click="changeSort('type')">Type</a></th>
-          <th><a ng-click="changeSort('expiration')">Expiration</a></th>
-          <th><a ng-click="changeSort('quantity')">Quantity</a></th>
-          <th><a ng-click="changeSort('percentRemaining')">Percent Remaining</a></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="row" ng-repeat="f in food | filter:filter | orderBy:sort:reverse">
-            <td>{{f.name}}</td>
-            <td>{{f.type}}</td>
-            <td>{{f.expiration}}</td>
-            <td>{{f.quantity}}</td>
-            <td class="progress"><div class="bar" style="width: {{f.percentRemaining}}%"</td>
-        </tr>
-      </tbody>
-    </table>
+<!DOCTYPE html>
 
-  <button ng-click="toggleForm()" ng-hide="isFormActive">Add One</button>
-  <button ng-click="toggleForm()" ng-show="isFormActive">Hide Form</button>
-  <form ng-show="isFormActive">
-      <hr />
-      <label for="name">Name:</label>
-      <input name="name" ng-model="editableFood.name" />
-      <br />
+<html>
+<head>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        var fileExt = {};
+        fileExt[0]=".png";
+        fileExt[1]=".jpg";
+        fileExt[2]=".JPG";
+        $.ajax({
+            //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+            url: '/images/Events/03_DumbCharades',
 
-      <label for="type">Type:</label>
-      <input name="type" ng-model="editableFood.type" />
-      <br />
+            success: function (data) {
+                
+                $("#fileNames").html('<ul>');
+                //List all png or jpg or gif file names in the page
+                $(data).find('a:contains(" + fileExt[0] + "),a:contains(" + fileExt[1] + "),a:contains(" + fileExt[2] + ")').each(function () {
+                    var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+                    $("#fileNames").append( '<li>'+filename+'</li>');
+                });
+                $("#fileNames").append('</ul>');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id='fileNames'> </div>
 
-      <label for="expiration">Expiration</label>
-      <input name="expiration" ng-model="editableFood.expiration" />
-      <br />
-
-      <label for="quantity">Quantity</label>
-      <input name="quantity" ng-model="editableFood.quantity" />
-      <br />
-
-      <label for="percentRemaining">Percent Remaining</label>
-      <input name="percentRemaining" ng-model="editableFood.percentRemaining" /><br />
-
-        <div class="span4 text-right">
-          <div class="row">
-            <button ng-click="toggleForm()">Cancel</button>
-            <button ng-click="addFood()">Add</button>
-          </div>
-        </div>
-  </form>
-</div>
-<div id="footer">
-    <a target="_blank" href="http://sailsjs.com" class="copyright">Built with Sails.js</a>
-</div>
-
-<style type="text/css">
-  label { width: 150px; display:inline-block; text-align:right; }
-  button { margin-right: 10px;}
-  .text-right { text-align: right;}
-</style>
-
-<script type='text/javascript'>
-    var foodApp = angular.module('foodApp', ['ngResource']);
-    foodApp.factory('Food', ['$resource', function($resource){
-        return $resource('/food/:id', {id:'@id'});
-    }]);
-    function FoodController($scope, Food){
-      $scope.food = Food.query();
-      $scope.isFormActive = false;
-      $scope.sort = "name";
-      $scope.reverse = false;
-      $scope.changeSort = function(value){
-          if ($scope.sort == value){
-            $scope.reverse = !$scope.reverse;
-            return;
-          }
-          $scope.sort = value;
-          $scope.reverse = false;
-      }
-      $scope.toggleForm = function(){
-        if ($scope.isFormActive){
-            $scope.isFormActive = false;
-            return;
-        }
-        $scope.isFormActive = true;
-        $scope.editableFood = new Food();
-      };
-      $scope.addFood = function(){
-            $scope.editableFood.$save();
-            $scope.food.push($scope.editableFood);
-            $scope.toggleForm();
-      };
-    };
-</script>
+</body>
+</html>
