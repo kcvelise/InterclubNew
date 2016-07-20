@@ -6,9 +6,10 @@ html,body{
 .sideNav{
     /*background-color: #294356;*/
     position: relative;
-    background-image: url('../images/side.jpg');
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    background: url('../images/hexagon-metrology-hero.jpg') bottom no-repeat,url('../images/hexagon-metrology-hero.jpg') top no-repeat;
+    
+    
+   
     
 }
 .sideNav a{
@@ -44,6 +45,13 @@ html,body{
     position: absolute;
     bottom: 10px;
     width:100%;
+    
+}
+.navFooter a{
+    border:none;
+}
+.navFooter a:hover{
+   background-color:none;
 }
 
 .content{
@@ -310,10 +318,10 @@ color: #7a7a7a;
     cursor: pointer;
 }
 .pop{
-    background-color: aqua;
+    
     width:100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     display: none;
     position: fixed;
     left: 0;
