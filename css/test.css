@@ -49,10 +49,9 @@ html,body{
 }
 .navFooter a{
     border:none;
+    background-color: transparent !important;
 }
-.navFooter a:hover{
-   background-color:none;
-}
+
 
 .content{
     height:100%;
@@ -301,7 +300,12 @@ color: #7a7a7a;
 }
 .imageStyle{
     
-   max-height: 60vh;
+   max-height: 80vh;
+}
+@media (max-width:600px){
+    .imageStyle{
+   max-height: 40vh;
+}
 }
 
 .prevBtn{
@@ -333,4 +337,7 @@ color: #7a7a7a;
     color: white;
     font-size: 56px !important;
     font-family: Segoe UI Light;
+}
+.clsBtn:hover{
+    color: white;
 }
